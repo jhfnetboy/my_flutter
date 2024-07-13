@@ -29,11 +29,11 @@ class Router {
       // 打开网页
       Navigator.push(context, MaterialPageRoute(builder: (context) {
         // jason edit, maybe wrong
-        var my_flutter;
+        var myFlutter;
         return CommonWebViewPage(
           url: url,
           // key: null,
-          key: my_flutter,
+          key: myFlutter,
         ); // 请注意，打开这部分注释，需要在 pubspec.yaml 中增加 flutter_webview_plugin 库的依赖，不然会报错，同时打开上面 import 的注释即可使用，具体请查看 pages/common/web_view_page.dart 文件
       }));
       return notEntrancePageIndex;
